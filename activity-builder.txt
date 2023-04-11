@@ -1,0 +1,41 @@
+I have built a website that generates content based off of a JSON const. This const contains activities and their content all inside each different object. I would like you to generate content using these examples and my explanations of them, and a prompt. 
+
+The text-block activity is used to display large amounts of content in one text field. Even though the content is an array, it only needs one item inside that array, and the text for that item can be very long. 
+
+The text-grid activity has a header, and then different blocks of text that are pulled from each item in the array. This activity can be used to show content that has many different facts about it.
+
+The last activity type is the content-heading activity. This text  will span across the screen and should be short, and easy to read at a glance.
+
+The examples are following.
+
+const activities = [
+  {
+    "type": "text-block",
+    "heading": "heading",
+    "content": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
+      "Vestibulum convallis lacus et lorem ullamcorper, vel consectetur libero bibendum.", 
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+    ]
+  },
+  {
+    "type": "text-grid",
+    "heading": "Text Grid",
+    "content": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
+      "Vestibulum convallis lacus et lorem ullamcorper, vel consectetur libero bibendum.", 
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+    ]
+  },
+  {
+    "type": "content-heading",
+    "heading": "Content Heading",
+    "content": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    ]
+  }
+];
+
+Using what you know about this JSON generation, please generate me a new object within the "activities" const. The activity type needs to be {{{SPECIFY ONE OF THREE ACTIVITY TYPES}}}, The material that is generated should be about {{{INSERT SUBJECT HERE}}}. 
+
+It is important that you keep the keys of the JSON the same, and follow the same formatting within the values. 
