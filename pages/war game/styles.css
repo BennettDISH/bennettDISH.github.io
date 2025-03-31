@@ -1,0 +1,26 @@
+.region {
+    width: 150px;
+    height: 120px;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    position: relative; /* Required for stacking context */
+}
+
+.region:hover {
+    cursor: pointer;
+    background-color: #ddd;
+    z-index: 1; /* Ensures hover effect is visible */
+}
+
+.owned {
+    background-color: #90EE90; /* Light green to indicate ownership */
+    z-index: 0; /* Lower index to keep the ownership color visible on hover */
+}
+
+#homeBase {
+    margin-bottom: 10px;
+}

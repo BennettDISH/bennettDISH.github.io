@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JSON Builder</title>
+</head>
+<body>
+    <div class="container">
+        <div class="builder">
+            <h1>JSON Builder</h1>
+            <div class="input-form">
+                <input type="text" id="key" placeholder="Enter Key">
+                <select id="data-type">
+                    <option value="string">String</option>
+                    <option value="number">Number</option>
+                    <option value="boolean">Boolean</option>
+                    <option value="array">Array</option>
+                    <option value="object">Object</option>
+                </select>
+                <div id="value-input">
+                    <input type="text" placeholder="Enter Value">
+                </div>
+                <button id="add-input">Add Key-Value Pair</button>
+            </div>
+            <div class="input-list">
+                <h2>Key-Value Pairs</h2>
+                <ul id="input-list"></ul>
+                <button id="export-button">Export as JSON</button>
+            </div>
+        </div>
+        <div class="json-output">
+            <h2>JSON Output</h2>
+            <pre id="json-output"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

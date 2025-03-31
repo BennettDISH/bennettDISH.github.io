@@ -1,0 +1,109 @@
+{
+    "events": [
+        {
+            "date": "Friday, Nov 17",
+            "details": [
+                { "time": "9:00 AM", "activity": "Fly to JFK" },
+                { "time": "5:00 PM", "activity": "Arrive at JFK" },
+                { "time": "5:30 PM", "activity": "Find a place to stay" }
+            ],
+            "notes": "Consider booking accommodation near JFK Airport for convenience."
+        },
+        {
+            "date": "Saturday, Nov 18",
+            "details": [
+                { "time": "9:00 AM", "activity": "Depart for Peru" },
+                { "time": "9:35 PM", "activity": "Arrive in Peru" },
+                { "time": "10:00 PM", "activity": "Driver arranged to Peru Star Apart Hotel" }
+            ],
+            "notes": "Ensure you have necessary travel documents and contact information for the driver."
+        },
+        {
+            "date": "Sunday, Nov 19",
+            "details": [
+                { "time": "9:00 AM", "activity": "Church in the Limatambo ward" },
+                { "time": "12:00 PM", "activity": "Fly to Cuzco, Transportation arranged By Betho" },
+                { "time": "1:30 PM", "activity": "Stay at Hotel Xima" }
+            ],
+            "notes": "Pack essential items in your backpack for the flight to Cuzco."
+        },
+        {
+            "date": "Monday, Nov 20",
+            "details": [
+                { "time": "8:00 AM", "activity": "Pick up for Sacred Valley tour" },
+                { "time": "8:30 AM", "activity": "Visit Chinchero" },
+                { "time": "10:30 AM", "activity": "Explore Maras and Moray with a buffet lunch" },
+                { "time": "2:30 PM", "activity": "Afternoon at Rua Ferrata and Zip line" },
+                { "time": "5:00 PM", "activity": "Take the train to Ollanta and Machu Picchu" },
+                { "time": "7:00 PM", "activity": "Arrive at Hotel Casa De Luz" }
+            ],
+            "notes": "Wear comfortable clothing and footwear for the tours."
+        },
+        {
+            "date": "Tuesday, Nov 21",
+            "details": [
+                { "time": "6:30 AM", "activity": "Take a bus to Machu Picchu" },
+                { "time": "2:30 PM", "activity": "Take a train and bus back to Ollanta and Cusco" },
+                { "time": "4:30 PM", "activity": "Return to Hotel Xima" }
+            ],
+            "notes": "Don't forget your Machu Picchu tickets and have a valid ID with you."
+        },
+        {
+            "date": "Wednesday, Nov 22",
+            "details": [
+                { "time": "9:00 AM", "activity": "City tour of Sacsayhuamán, temple of the Sun, Quenco, Koricancha" },
+                { "time": "2:00 PM", "activity": "Explore the Choco Museum" },
+                { "time": "4:30 PM", "activity": "Fly back to Lima" },
+                { "time": "8:00 PM", "activity": "Birthday dinner at a place of Tyler’s choosing" },
+                { "time": "10:30 PM", "activity": "Return to Peru Star Apart Hotel" }
+            ],
+            "notes": "Celebrate Tyler's birthday and enjoy the city tour."
+        },
+        {
+            "date": "Thursday, Nov 23",
+            "details": [
+                { "time": "6:45 AM", "activity": "Leave for Lima Temple baptisms" },
+                { "time": "8:00 AM", "activity": "Participate in temple baptisms" },
+                { "time": "10:30 AM", "activity": "Explore Plaza de Armas, catacombs, Cathedral, etc." },
+                { "time": "4:30 PM", "activity": "Dinner reservation at Granja Azul" }
+            ],
+            "notes": "Plan your temple attire and enjoy exploring Lima's historic sites."
+        },
+        {
+            "date": "Friday, Nov 24",
+            "details": [
+                { "time": "9:00 AM", "activity": "Visit Inca market" },
+                { "time": "11:00 AM", "activity": "Explore Los Olivos Temple open house" },
+                { "time": "1:00 PM", "activity": "Visit Parque de Las Leyendas" },
+                { "time": "7:00 PM", "activity": "Dinner at Reserva park and Stadium" }
+            ],
+            "notes": "Wear comfortable clothing for the day's activities and temple visit."
+        },
+        {
+            "date": "Saturday, Nov 25",
+            "details": [
+                { "time": "10:00 AM", "activity": "Katie, Tyler, Allen to the airport" },
+                { "time": "2:00 PM", "activity": "Stay in a hotel" },
+                { "time": "4:00 PM", "activity": "Visit Callao for nativities" }
+            ],
+            "notes": "Ensure everyone has their airport essentials and a comfortable stay."
+        },
+        {
+            "date": "Sunday, Nov 26",
+            "details": [
+                { "time": "10:00 AM", "activity": "Bennett and Dana to the airport" },
+                { "time": "1:00 PM", "activity": "Church" }
+            ],
+            "notes": "Coordinate airport departures and enjoy the church service."
+        },
+        {
+            "date": "Monday, Nov 27",
+            "details": [
+                { "time": "6:30 AM", "activity": "Mom, Dad, Grace, Beck to Nazca" },
+                { "time": "10:00 AM", "activity": "Driver takes Addison and Megan to the airport" },
+                { "time": "2:00 PM", "activity": "Stay at a nearby location" }
+            ],
+            "notes": "Arrange transportation and ensure smooth departures for each group."
+        }
+    ]
+}

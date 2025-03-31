@@ -1,0 +1,25 @@
+{
+    "gameRounds": [
+        {
+            "words": [
+                "Sun", "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Neptune",
+                "Rose", "Tulip", "Daisy", "Lily",
+                "Dog", "Cat",
+                "Python", "Java", "C#", "JavaScript", "Ruby", "PHP", "Go", "Swift"
+            ],
+            "groups": [
+                ["Sun", "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Neptune"],
+                ["Rose", "Tulip", "Daisy", "Lily"],
+                ["Dog", "Cat"],
+                ["Python", "Java", "C#", "JavaScript", "Ruby", "PHP", "Go", "Swift"]
+            ],
+            "connections": [
+                "Planets",
+                "Flowers",
+                "Pets",
+                "Programming Languages"
+            ],
+            "groupColors": ["#700FD4", "#aaD700", "#FFa5B4", "#ADFFfF"]
+        }
+    ]
+}

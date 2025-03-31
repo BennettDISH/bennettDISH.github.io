@@ -1,13 +1,134 @@
 body {
-  font-family: Arial, sans-serif;
+    background-color: #343a40;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-h1 {
-  text-align: center;
+header {
+    background: linear-gradient(45deg, #3498db, #e74c3c);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px 0; /* Slightly reduced header padding for mobile */
+    font-size: 24px;
 }
 
-.item {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
+.container {
+    max-width: 1000px; /* Increased max-width for the container */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    width: 250px;
+    height: auto; /* Allow the card height to adjust to content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribute space evenly within the card */
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Increase padding for better text layout */
+    text-align: center; /* Center-align text */
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.project-item h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.project-item p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.interactive-element {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.square.active {
+    background-color: #e74c3c;
+}
+
+.interactive-container {
+    background-color: #333; /* Set a darker background color */
+    padding: 20px;
+    width: 300px; /* Adjust the width as needed */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Style the buttons */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+    /* Adjustments for mobile devices */
+    .container {
+        max-width: 100%; /* Full width for mobile */
+    }
+
+    .project-list {
+        justify-content: flex-start; /* Left-align project cards on mobile */
+    }
+    
+    .project-item {
+        width: 100%; /* Full width for project cards on mobile */
+    }
+
+    .square {
+        width: 20px;
+        height: 20px;
+        margin: 2px;
+    }
+
+    .interactive-container {
+        padding: 10px;
+    }
 }

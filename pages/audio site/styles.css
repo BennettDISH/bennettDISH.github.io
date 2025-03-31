@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative; /* Add this for positioning elements within the body */
+  }
+  .paragraph {
+    margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    text-align: left;
+    max-width: 80%;
+    display: block; /* Display all paragraphs */
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  .scroll-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .highlight {
+    background-color: yellow; /* Highlight color */
+    transition: top 0.3s, height 0.3s, background-color 0.3s; /* Smooth transitions */
+    position: absolute;
+    z-index: 1; /* Ensure the highlight appears on top of other elements */
+  }
+  .progress-bar {
+    background-color: #0073e6; /* Progress bar color */
+    width: 0;
+    height: 4px;
+    position: absolute;
+    z-index: 2; /* Ensure the progress bar appears on top of other elements */
+    top: 0;
+    left: 0; /* Position the progress bar at the top-left corner */
+  }
+  

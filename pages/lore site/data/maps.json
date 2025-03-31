@@ -1,0 +1,34 @@
+{
+    "main-map": {
+        "mapSrc": "assets/maps/main-map.png",
+        "events": [
+            { "dotFile": "./data/dots/dot1.json" },
+            { "dotFile": "./data/dots/dot2.json" }
+        ],
+        "info": {
+            "title": "Main Map",
+            "description": "This is the main map representing the central region of the world..."
+        }
+    },
+    "city-map": {
+        "mapSrc": "assets/maps/city-map.png",
+        "events": [
+            { "dotFile": "./data/dots/dot3.json" },
+            { "dotFile": "./data/dots/dot4.json" }
+        ],
+        "info": {
+            "title": "City Map",
+            "description": "This map represents the city, known for its vibrant culture and bustling marketplace..."
+        }
+    },
+    "forest-map": {
+        "mapSrc": "assets/maps/forest-map.png",
+        "events": [
+            { "dotFile": "./data/dots/dot5.json" }
+        ],
+        "info": {
+            "title": "Forest Map",
+            "description": "This is the forest map, covering a dense area of trees and wildlife..."
+        }
+    }
+}

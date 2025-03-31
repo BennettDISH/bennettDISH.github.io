@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Military Strategy Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="homeBase">
+        Resources: <span id="resources">100</span>
+    </div>
+    <div id="region1" class="region" onclick="claimRegion('region1', 20)">
+        Region 1<br>
+        Units: <span id="units1">0</span> (1/sec)<br>
+        Vehicles: <span id="vehicles1">0</span> (1/10 sec)
+        <br>Cost: 20
+    </div>
+    <div id="region2" class="region" onclick="claimRegion('region2', 40)">
+        Region 2<br>
+        Units: <span id="units2">0</span> (1/4 sec)<br>
+        Vehicles: <span id="vehicles2">0</span> (1/35 sec)
+        <br>Cost: 40
+    </div>
+    <div id="region3" class="region" onclick="claimRegion('region3', 30)">
+        Region 3<br>
+        Units: <span id="units3">0</span> (1/1.5 sec)<br>
+        Vehicles: <span id="vehicles3">0</span> (1/20 sec)
+        <br>Cost: 30
+    </div>
+    <div id="region4" class="region" onclick="claimRegion('region4', 50)">
+        Region 4<br>
+        Units: <span id="units4">0</span> (1/3 sec)<br>
+        Vehicles: <span id="vehicles4">0</span> (1/40 sec)
+        <br>Cost: 50
+    </div>
+    <div id="region5" class="region" onclick="claimRegion('region5', 35)">
+        Region 5<br>
+        Units: <span id="units5">0</span> (1/2.5 sec)<br>
+        Vehicles: <span id="vehicles5">0</span> (1/15 sec)
+        <br>Cost: 35
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

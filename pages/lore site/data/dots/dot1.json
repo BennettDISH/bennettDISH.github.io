@@ -1,0 +1,10 @@
+{
+    "id": 1,
+    "time": 10,
+    "end": 20,
+    "x": 50,
+    "y": 60,
+    "content": "Event 1 details...",
+    "tooltip": "First Event",
+    "additionalInfo": "More detailed information about this event..."
+}

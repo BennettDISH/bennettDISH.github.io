@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard's Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="workshop-background">
+        <img src="../../images/wizard_site/blue crystal.png" alt="Interactive Crystal" class="interactive-item"
+            onclick="itemClicked()">
+        <img src="../../images/wizard_site/spellbook.png" alt="Interactive Spellbook" class="spellbook"
+            onclick="itemClicked('spellbook')">
+        <!-- Lore Text Container -->
+        <div id="loreText" class="hidden">The crystal pulses with ancient magic, bound by centuries-old enchantments.
+            Its glow tells tales of forgotten worlds.</div>
+    </div>
+    <div id="inventory" class="inventory">
+        <h2>Inventory</h2>
+        <!-- Items will be dynamically added here -->
+    </div>
+    <img src="../../images/wizard_site/blue crystal.png" alt="Interactive Crystal" class="interactive-item" id="crystal"
+        data-name="Mystical Crystal" onclick="itemClicked('crystal')">
+    <img src="../../images/wizard_site/spellbook.png" alt="Interactive Spellbook" class="interactive-item"
+        id="spellbook" data-name="Ancient Spellbook" onclick="itemClicked('spellbook')">
+
+    <script src="script.js"></script>
+</body>
+
+</html>

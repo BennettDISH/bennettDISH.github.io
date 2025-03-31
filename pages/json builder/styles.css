@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.builder {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.builder h1 {
+    margin: 0 0 20px;
+}
+
+.input-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-form input,
+.input-form select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.input-form #value-input {
+    flex: 2;
+}
+
+.input-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.input-form button:hover {
+    background-color: #0056b3;
+}
+
+.input-list {
+    margin-top: 20px;
+}
+
+.input-list h2 {
+    margin: 0 0 10px;
+}
+
+.input-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.input-list li {
+    margin-bottom: 5px;
+}
+
+.input-list button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.input-list button:hover {
+    background-color: #0056b3;
+}
+
+.json-output {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    white-space: pre-wrap;
+}
+
+.json-output h2 {
+    margin: 0 0 10px;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+.json-output {
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px;
+    white-space: pre-wrap; /* This ensures line breaks are preserved */
+  }
+  
+  .container {
+    display: flex; /* Display both builder and JSON output side by side */
+    justify-content: space-between;
+  }
+  
+  .builder {
+    width: 48%; /* Adjust the width as needed */
+  }
+  
+  .json-output {
+    width: 48%; /* Adjust the width as needed */
+  }
+  

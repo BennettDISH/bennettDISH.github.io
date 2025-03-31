@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0074a2;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+main {
+    margin: 20px;
+}
+
+.event {
+    border: 1px solid #0074a2;
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 2px 2px 5px #ccc;
+    border-radius: 5px;
+}
+
+.time {
+    font-weight: bold;
+    color: #0074a2;
+    min-width: 100px;
+    text-align: center;
+    padding: 5px;
+    background-color: #0074a2;
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+    margin-right: 10px;
+    cursor: pointer; /* Add cursor pointer for clickability */
+}
+
+.activity {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.activity .time {
+    font-weight: bold;
+    color: #0074a2;
+    min-width: 100px;
+    text-align: center;
+    padding: 5px;
+    background-color: #0074a2;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.activity .activity-text {
+    flex: 1;
+}
+
+/* Additional styling for better clarity */
+.event:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.expanded {
+    display: block;
+}
+
+.details-container {
+    display: none; /* Initially hide the details */
+}
+
+.details-container.expanded {
+    display: block; /* Show the details when expanded */
+}
+
+.notes {
+    background-color: #ffeeaa;
+    border: 1px solid #ffcc00;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.event:nth-child(even) {
+    background-color: #D8DDEF; /* Alternate background color */
+}
+
+.event:nth-child(odd) {
+    background-color: #A0A4B8; /* Default background color */
+}

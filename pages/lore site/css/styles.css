@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    flex: 0 0 50px; /* Fixed height for the header */
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#breadcrumbs {
+    margin: 10px;
+}
+
+#back-button {
+    margin: 10px;
+}
+
+#map-container {
+    flex-grow: 1;
+    position: relative;
+    width: 90%;
+    max-width: 100%;
+    background-color: #f0f0f0;
+    margin-right: 200px; /* Reserve space for sidebar */
+    overflow: hidden;
+}
+
+#map {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.dot {
+    position: absolute;
+    width: 30px; /* Default size */
+    height: 30px; /* Default size */
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.2s ease, border 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.dot-content, .dot-map-link {
+    background-color: blue;
+    border: 2px solid white;
+}
+
+.dot-map-link {
+    background-color: green;
+    border: 2px solid yellow;
+}
+
+.dot[style*="background-image"] {
+    border: 2px solid white; /* White border around image */
+}
+
+.dot[style*="background-image"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* White hazy background */
+    border-radius: 50%; /* Match the shape of the dot */
+    z-index: 1; /* Ensure the haze is behind the image */
+}
+
+.dot[style*="background-image"]::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2; /* Ensure the image is on top of the haze */
+}
+
+.dot:hover {
+    transform: translate(-50%, -50%) scale(1.2); /* Grow the dot slightly on hover */
+    border-width: 3px; /* Slightly thicker border on hover */
+}
+
+#document-display {
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    height: 20vh; /* Fixed height for the document display */
+    overflow-y: auto;
+    width: 100%;
+    margin-top: 20px; /* Ensure it is below the map */
+}
+
+#tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Make sure it appears on top */
+}
+
+/* Consider using JavaScript to show/hide tooltips */
+.dot:hover + #tooltip {
+    display: block;
+    opacity: 1;
+}
+
+#timeline-container {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    margin: 20px auto;
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+#timeline-track {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ddd;
+    transform: translateY(-50%);
+    border-radius: 2px;
+}
+
+#timeline-thumb {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #333; /* Standout color */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+    border: 2px solid #fff; /* Make the thumb more visible */
+}
+
+#timeline-markers {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.marker {
+    position: absolute;
+    top: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: red;
+    transform: translateY(-50%);
+}
+
+.sidebar-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-left: 1px solid #ddd;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.dot-list-item {
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: #e8e8e8;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.dot-list-item:hover {
+    background-color: #d0d0d0;
+}

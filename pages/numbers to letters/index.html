@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Cryptography Tool</h1>
+            <div class="theme-toggle" onclick="toggleTheme()">🌓</div>
+        </div>
+        
+        <div class="conversion-section">
+            <h2>Number ↔ Letter Conversion</h2>
+            <div class="input-group">
+                <input type="text" id="numberInput" placeholder="Enter numbers (1-26)">
+                <button onclick="convertNumbers()">Convert to Letters</button>
+                <div class="result" id="numberResult"></div>
+            </div>
+            
+            <div class="input-group">
+                <input type="text" id="letterInput" placeholder="Enter letters">
+                <button onclick="convertLetters()">Convert to Numbers</button>
+                <div class="result" id="letterResult"></div>
+            </div>
+        </div>
+
+        <div class="cipher-section">
+            <h2>Caesar Cipher</h2>
+            <div class="slider-container">
+                <label>Shift Amount: <span id="shiftValue">0</span></label>
+                <input type="range" min="0" max="25" value="0" id="shiftSlider">
+            </div>
+            <div class="input-group">
+                <textarea id="cipherInput" placeholder="Enter text to encrypt/decrypt"></textarea>
+                <div class="button-group">
+                    <button onclick="encrypt()">Encrypt</button>
+                    <button onclick="decrypt()">Decrypt</button>
+                </div>
+                <div class="result" id="cipherResult"></div>
+            </div>
+        </div>
+
+        <div class="vigenere-section">
+            <h2>Vigenère Cipher</h2>
+            <div class="input-group">
+                <input type="text" id="keyInput" placeholder="Enter key">
+                <textarea id="vigenereInput" placeholder="Enter text to encrypt/decrypt"></textarea>
+                <div class="button-group">
+                    <button onclick="vigenereEncrypt()">Encrypt</button>
+                    <button onclick="vigenereDecrypt()">Decrypt</button>
+                </div>
+                <div class="result" id="vigenereResult"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
